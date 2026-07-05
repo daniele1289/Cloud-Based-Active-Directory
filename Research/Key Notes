@@ -1,9 +1,10 @@
 # What is Active Directory?
 
-
+Active Directory is Microsoft's centralized directory and identity management service used to manage users, devices, and permissions across networks 
 
 #On-Prem AD vs Cloud AD
-
+- On-Premises Active Directory provides direct control over local network resources using legacy protocols
+- Cloud based directory services(liek Microsoft Entra ID) manage identities across web applications and devices via modern, API-driven authentication
 
 
 #Identify and Access Management
