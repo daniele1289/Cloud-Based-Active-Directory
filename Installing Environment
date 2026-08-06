@@ -12,11 +12,50 @@ Ran into issues with trying to configure networking, so I had to go to go settin
 
 Input--> keyboard--> insert ctrl+alt+delete on microsoft in VM
 
+Server Manager --> Local Server--> click WIN---X--> CHange.. 
 
 
+## CONFIGURING STATIC IP
+- This is crucial because we need to ensure the server always has the same IP addresss. By default, Windows uses DHCP, which can assign a different IP after a reboot. 
+- A Domain Controller must always be reachable at the same address because every client computer depends on it. This matters as well to keep DNS records accurate and Active Directory services to stay reliable.
 
+Key Commands: ipconfig - reveals the basic ipv4 address, subnet mask, and default gateway, ping- verifies network conectivity by sending data packets, helping diagnose whter a device is reachable and checks your connection's latency
 
-# Configure Networking
+MAIN THINGS: 
 
-Server Manager --> Local Server--> click WIn---X--> CHange.. -->
+# Building the Active Directory Domain
+
+1. Installed Active Directory Domain Services (AD DS) and promoted Windows Server 2022 to a Domain Controller.
+2. Created a new Active Directory forest and domain named corp.local.
+3. Configured DNS to support domain services and centralized authentication.
+4. Verified Active Directory, DNS, and Group Policy Management were functioning correctly.
+5. Creating Organizational Units (OUs)
+
+# Creating Orginizational Units (OUs)
+
+1. Created Organizational Units to organize users and computers by department and function.
+2. OUs Created:
+IT
+HR
+Finance
+Sales
+Workstations
+Servers
+3. Structured the domain to simplify administration and future Group Policy deployment.
+
+# Creating Security Groups
+
+1. Created Global Security Groups for each department:
+IT_Admins
+HR_Users
+Finance_Users
+Sales_Users
+
+2. Implemented Role-Based Access Control (RBAC) by assigning permissions through groups instead of individual users.
+
+# Creating Domain Users
+
+1. Created user accounts for each department within their respective Organizational Units.
+2. Assigned secure passwords and added users to the appropriate departmental security groups.
+3. Established centralized authentication and access management for domain resources.
 
