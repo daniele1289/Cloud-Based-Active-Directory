@@ -1,5 +1,22 @@
 - Download VirtualBox--> Create Virtual Machines, Im going to be using Windows Server 2022, Windows 11, and Kali Linux --> Configure Networking
 
+I went to Microsoft Windows Server 2022 Evaluation Center link to download windows server 2022 --> microsoft windows 11 iso
+
+
+## Creating Windows Server VM
+1. Click New in VirtualBox, enter: Name: DC01, Type: Microsoft Windows, Version: Windows 2022(64-bit), Allocate: RAM: 4096 MB(4 GB), Processors: 2, Create a virutal hard disk: Type: VDI, Storage: Dynamically allocated, Size: 60 GB
+2. BASE MMEORY: SET TO 4096 MB, 2 CPUS, 60 Gb FOR DISK SIZE for Windows Server 2022
+
+
+Ran into issues with trying to configure networking, so I had to go to go settings-> storage--> and choose eval disk --> Windows Server 2022 Evaluation(Desktop Experience) --> instsallation type choose Custom: Install Microsoft Server Operating System Only
+
+Input--> keyboard--> insert ctrl+alt+delete on microsoft in VM
+
+
+
+
 
 # Configure Networking
+
+Server Manager --> Local Server--> click WIn---X--> CHange.. -->
 
