@@ -67,3 +67,4 @@ Lessons Learned so far... -->
 - Organized enterprise resources using Organizational Units.
 - Implemented Role-Based Access Control using Security Groups.
 - Gained experience administering users within an Active Directory domain.
+- Use snipping tool on ACTUAL WINDOWS SCREEN to take screenshots inside VirtualBox VM
