@@ -1,5 +1,9 @@
 # Active Directory Configuration Documentation
 
+
+# Purpose of Active Directory
+Active Directory  serves as an essential tool for organizing and managing users, their attributes and group membership, computer accounts, network resources and much more. AD is like a phone book for your IT infrastructure and users. It equips teams with centralized authentication and authorization services intended for Windows-based computers. Ultimately, Active Directory stores information as “objects,” which are any resources within the network, such as computers, user accounts, contacts, groups, organizational units and shared folders. Objects are categorized by name and attributes. The information is kept in a structured data store optimized to enhance query performance and scalability, which makes it easy for network users and applications to locate and use any needed bits of information. So, the purpose of Active Directory is to enable organizations to keep their network secure and organized efficiently.
+
 ## Server Configuration
 
 **Server Name:** DC01  
