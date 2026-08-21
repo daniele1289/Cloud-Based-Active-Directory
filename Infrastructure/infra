@@ -1,1 +1,12 @@
+SUMMARY:
 
+
+
+
+
+DC01 Network Configuration — Shows the Domain Controller's static IP and DNS configuration.
+VirtualBox Internal Network — Shows DC01 and CLIENT01 connected to the same isolated lab network.
+CLIENT01 Network Configuration — Shows the workstation's static IP and DC01 configured as its DNS server.
+Connectivity & DNS Testing — Demonstrates successful communication between CLIENT01 and DC01 and resolution of corp.local.
+Domain Join — Shows the successful corp.local domain join.
+CLIENT01 in Active Directory — Demonstrates that the Windows 11 workstation is recognized and managed by Active Directory.
