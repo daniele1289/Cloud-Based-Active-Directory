@@ -4,6 +4,8 @@
 # Purpose of Active Directory
 Active Directory  serves as an essential tool for organizing and managing users, their attributes and group membership, computer accounts, network resources and much more. AD is like a phone book for your IT infrastructure and users. It equips teams with centralized authentication and authorization services intended for Windows-based computers. Ultimately, Active Directory stores information as “objects,” which are any resources within the network, such as computers, user accounts, contacts, groups, organizational units and shared folders. Objects are categorized by name and attributes. The information is kept in a structured data store optimized to enhance query performance and scalability, which makes it easy for network users and applications to locate and use any needed bits of information. So, the purpose of Active Directory is to enable organizations to keep their network secure and organized efficiently.
 
+DNS- translates names into numbers so your computer can load the website, human-readable domain names to machine-readable IP addressses(phonebook of the Internet)
+
 ## Server Configuration
 
 **Server Name:** DC01  
@@ -16,7 +18,8 @@ Active Directory  serves as an essential tool for organizing and managing users,
 
 **Active Directory Domain:** corp.local  
 
-**Domain Controller:** DC01  
+**Domain Controller:** DC01- I was able to prove DC01 is the DNS/domain-controller host through my screenshots
+* Ran into issues so I had to troubleshoot the 169.254.x.x address and manually configure CLIENT01 to get successful replies from ping 192.168.10.10, getting replies would prove CLIENT01 can communicate with the domain controller and resolve the AD domain. Eventually, successfully joined CLIENT01 to the corp.local Active Directory domain and authenticated using a domain account, establishing the Windows 11 workstation as a managed domain client. This was a CRUCIAL part of my project.
 
 **Active Directory Services Installed:**
 - Active Directory Domain Services (AD DS)
