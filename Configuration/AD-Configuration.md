@@ -24,6 +24,8 @@ DNS- translates names into numbers so your computer can load the website, human-
   
 * Ran into issues so I had to troubleshoot the 169.254.x.x address and manually configure CLIENT01 to get successful replies from ping 192.168.10.10, getting replies would prove CLIENT01 can communicate with the domain controller and resolve the AD domain. Eventually, successfully joined CLIENT01 to the corp.local Active Directory domain and authenticated using a domain account, establishing the Windows 11 workstation as a managed domain client. This was a CRUCIAL part of my project.
 
+* I defintely will need to name my screenshots since I have a lot so its clear whats what, everytime Im about to wrap it up for the day always save machine state so I pick up where I left off
+
 **Active Directory Services Installed:**
 - Active Directory Domain Services (AD DS)
 - DNS Server
