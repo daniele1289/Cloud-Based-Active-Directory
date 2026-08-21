@@ -19,6 +19,9 @@ DNS- translates names into numbers so your computer can load the website, human-
 **Active Directory Domain:** corp.local  
 
 **Domain Controller:** DC01- I was able to prove DC01 is the DNS/domain-controller host through my screenshots
+
+* Deployed a Windows 11 virtual machine as CLIENT01 and integrated it into the existing Windows Server 2022 Active Directory environment. Configured CLIENT01 on the same isolated VirtualBox internal network as DC01, assigned a static IP address of 192.168.10.20, and configured DC01 (192.168.10.10) as the DNS server
+  
 * Ran into issues so I had to troubleshoot the 169.254.x.x address and manually configure CLIENT01 to get successful replies from ping 192.168.10.10, getting replies would prove CLIENT01 can communicate with the domain controller and resolve the AD domain. Eventually, successfully joined CLIENT01 to the corp.local Active Directory domain and authenticated using a domain account, establishing the Windows 11 workstation as a managed domain client. This was a CRUCIAL part of my project.
 
 **Active Directory Services Installed:**
