@@ -1,0 +1,13 @@
+Configured the Active Directory environment to model organizational identity and access management. Created department-based Organizational Units (OUs), users, and security groups for IT, HR, Finance, and Sales. Department users were assigned to corresponding security groups such as GG_IT_Users, GG_HR_Users, GG_Finance_Users, and GG_Sales_Users.
+
+Implemented Role-Based Access Control (RBAC) by assigning resource permissions to security groups rather than individual users. Created department-specific network shares and configured both NTFS and share permissions to enforce least-privilege access. Access was validated by testing authorized and unauthorized users against departmental resources.
+
+AD Organizational Units — Shows the department and workstation OU structure.
+Department Users — Shows users organized according to their respective departments.
+Security Groups — Shows the department-based security groups used for access control.
+Group Membership — Demonstrates users assigned to their appropriate security groups.
+Department Shares — Shows the IT, HR, Finance, and Sales shared folders.
+Share Permissions — Demonstrates network-level permissions assigned to department groups.
+NTFS Permissions — Shows filesystem permissions assigned to the appropriate security groups.
+Authorized Access — Demonstrates an IT user successfully accessing and creating a file within the IT share.
+Access Denied / Least Privilege — Demonstrates an unauthorized department user being prevented from modifying or creating files within a restricted share.
